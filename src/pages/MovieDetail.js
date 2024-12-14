@@ -9,7 +9,7 @@ export const MovieDetail = () => {
   // console.log(useParams);
   const [movie,setMovie] = useState({});
 
-  const pageTitle = useTitle(movie.title);
+  useTitle(movie.title);
   const image = movie.poster_path ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}` : Backup;
 
   useEffect(()=>{
